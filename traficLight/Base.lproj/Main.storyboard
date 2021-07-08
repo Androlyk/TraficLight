@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -64,10 +64,13 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="vj2-de-tjQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mgz-SS-pXV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Mgz-SS-pXV" firstAttribute="trailing" secondItem="wkx-0A-goC" secondAttribute="trailing" constant="16" id="6Be-yr-uhF"/>
                             <constraint firstItem="hIc-aN-zWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BlV-6d-CLa"/>
@@ -78,16 +81,19 @@
                             <constraint firstItem="Mgz-SS-pXV" firstAttribute="trailing" secondItem="hIc-aN-zWV" secondAttribute="trailing" constant="130" id="uXl-ll-zYl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="bVe-vS-UrZ" id="JyC-W4-0L4"/>
+                        <outlet property="redLightView" destination="9eJ-Zd-LRU" id="ciY-l1-aHa"/>
+                        <outlet property="startButton" destination="wkx-0A-goC" id="O6H-JX-E2R"/>
+                        <outlet property="yellowLightView" destination="Our-7H-FBR" id="PkO-wK-kWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63.076923076923073" y="91.706161137440759"/>
+            <point key="canvasLocation" x="-466" y="70"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
